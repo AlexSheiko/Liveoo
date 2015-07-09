@@ -11,12 +11,26 @@
         android:orientation="vertical"
         android:padding="@dimen/grid_padding">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
+        <FrameLayout
+            style="@style/CategoryWrapper"
             android:layout_marginBottom="4dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/my_favourites"/>
+            android:onClick="openCategory">
+
+            <ImageView
+                style="@style/CategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/my_favourites"/>
+
+            <TextView
+                style="@style/CategoryTitle"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_favorite"
+                android:text="My Favourites"/>
+
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,19 +44,39 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginBottom="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/curated"/>
+                <FrameLayout
+                    style="@style/CategoryWrapper"
+                    android:onClick="openCategory">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="2dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/nightlife"/>
+                    <ImageView
+                        style="@style/CategoryImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/curated"/>
+
+                    <TextView
+                        style="@style/CategoryTitle"
+                        android:text="Curated"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    style="@style/CategoryWrapper"
+                    android:onClick="openCategory">
+
+                    <ImageView
+                        style="@style/CategoryImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/nightlife"/>
+
+                    <TextView
+                        style="@style/CategoryTitle"
+                        android:text="Performance and\nNightlife"/>
+
+                </FrameLayout>
 
             </LinearLayout>
 
@@ -53,11 +87,21 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
+                <FrameLayout
+                    style="@style/CategoryWrapper"
+                    android:onClick="openCategory">
+
                 <ImageView
+                    style="@style/CategoryImage"
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
-                    android:scaleType="centerCrop"
                     android:src="@drawable/eat_and_drink"/>
+
+                    <TextView
+                        style="@style/CategoryTitle"
+                        android:text="Eat and Drink"/>
+
+                </FrameLayout>
 
             </LinearLayout>
 
@@ -66,24 +110,46 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
 
-            <ImageView
+            <FrameLayout
+                style="@style/CategoryWrapper"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/get_healthy"/>
+                android:onClick="openCategory">
 
-            <ImageView
+                <ImageView
+                    style="@style/CategoryImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/get_healthy"/>
+
+                <TextView
+                    style="@style/CategoryTitle"
+                    android:text="Get Healthy"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/CategoryWrapper"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
+                android:onClick="openCategory">
+
+            <ImageView
+                style="@style/CategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:src="@drawable/culture"/>
+
+                <TextView
+                    style="@style/CategoryTitle"
+                    android:text="Culture"/>
+
+            </FrameLayout>
 
         </LinearLayout>
 

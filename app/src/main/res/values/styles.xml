@@ -57,4 +57,24 @@
         <item name="android:textSize">24sp</item>
     </style>
 
+    <style name="CategoryImage">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CategoryWrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:onClick">openCategory</item>
+    </style>
+
+    <style name="CategoryTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom|right</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
