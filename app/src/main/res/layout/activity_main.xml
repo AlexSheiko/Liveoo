@@ -13,10 +13,10 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginBottom="4dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/my_favourites"
-            android:layout_marginBottom="4dp"/>
+            android:src="@drawable/my_favourites"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,21 +26,21 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginRight="2dp">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="2dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/curated"
-                    android:layout_marginBottom="2dp"/>
+                    android:src="@drawable/curated"/>
 
                 <ImageView
-                    android:layout_marginTop="2dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="2dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/nightlife"/>
 
@@ -49,17 +49,41 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_marginLeft="2dp"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="240dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/eat_and_drink"/>
 
             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/get_healthy"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/culture"/>
 
         </LinearLayout>
 
