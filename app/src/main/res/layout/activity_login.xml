@@ -8,11 +8,12 @@
               android:paddingLeft="@dimen/activity_horizontal_margin"
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
+              android:background="@drawable/background_blurred_sample"
               tools:context=".LoginActivity">
 
     <TextView
         style="@style/TextLabel"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:text="Log In"
         android:textSize="24sp"/>
 
@@ -37,10 +38,26 @@
 
     <TextView
         style="@style/TextLabel"
-        android:text="Forgotten your account?"/>
+        android:text="Forgotten Your Account?"/>
 
     <TextView
         style="@style/TextLabel"
         android:text="Need an Account?"/>
+
+    <TextView
+        style="@style/TextLabel"
+        android:text="Or"
+        android:textAllCaps="true"/>
+
+    <!--TODO: Replace with real Facebook button-->
+    <Button
+        android:onClick="continueWithFacebook"
+        android:text="Sign in with Facebook"
+        style="@style/ButtonSecondary"
+        android:textAllCaps="false"/>
+
+    <TextView
+        style="@style/TextLabel"
+        android:text="@string/facebook_note"/>
 
 </LinearLayout>
