@@ -4,4 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="facebook_note">We will never post to Facebook\nwithout your permission</string>
+    <string name="login">L\u200ao\u200ag\u200ai\u200an</string>
+    <string name="register">R\u200ae\u200ag\u200ai\u200as\u200at\u200ae\u200ar</string>
 </resources>

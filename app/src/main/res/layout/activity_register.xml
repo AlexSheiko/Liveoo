@@ -13,34 +13,48 @@
 
     <TextView
         style="@style/FormHeader"
-        android:text="Log In"/>
+        android:text="Register"/>
+
+    <EditText
+        android:id="@+id/firstname_edittext"
+        style="@style/InputField"
+        android:drawableLeft="@drawable/ic_name"
+        android:hint="First Name"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/lastname_edittext"
+        style="@style/InputField"
+        android:drawableLeft="@drawable/ic_name"
+        android:hint="Last Name"
+        android:inputType="textPersonName"/>
 
     <EditText
         android:id="@+id/email_edittext"
         style="@style/InputField"
         android:drawableLeft="@drawable/ic_email"
-        android:hint="Your Email Address"
+        android:hint="Email Address"
         android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/password_edittext"
         style="@style/InputField"
         android:drawableLeft="@drawable/ic_password"
-        android:hint="Your Password"
+        android:hint="Password"
         android:inputType="textPassword"/>
 
     <Button
         android:onClick="login"
-        android:text="@string/login"
+        android:text="@string/register"
         style="@style/ButtonPrimary"/>
 
     <TextView
         style="@style/TextLabel"
-        android:text="Forgotten Your Account?"/>
+        android:text="Read Our Ts &amp; Cs and Privacy Policy"/>
 
     <TextView
         style="@style/TextLabel"
-        android:text="Need an Account?"/>
+        android:text="Already have an Account?"/>
 
     <TextView
         style="@style/TextLabel"
