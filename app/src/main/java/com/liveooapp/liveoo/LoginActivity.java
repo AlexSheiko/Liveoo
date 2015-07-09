@@ -20,4 +20,8 @@ public class LoginActivity extends AppCompatActivity {
     public void register(View view) {
         startActivity(new Intent(this, RegisterActivity.class));
     }
+
+    public void restorePassword(View view) {
+        startActivity(new Intent(this, RestorePasswordActivity.class));
+    }
 }

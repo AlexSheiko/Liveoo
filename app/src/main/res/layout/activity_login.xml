@@ -36,7 +36,9 @@
 
     <TextView
         style="@style/TextLabel"
-        android:text="Forgotten Your Account?"/>
+        android:text="Forgotten Your Account?"
+        android:clickable="true"
+        android:onClick="restorePassword"/>
 
     <TextView
         style="@style/TextLabel"
