@@ -12,6 +12,7 @@
         android:padding="@dimen/grid_padding">
 
         <FrameLayout
+            android:id="@+id/favourites"
             style="@style/CategoryWrapper"
             android:layout_marginBottom="4dp"
             android:onClick="openCategory">
@@ -20,7 +21,7 @@
                 style="@style/CategoryImage"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:src="@drawable/my_favourites"/>
+                android:src="@drawable/favourites"/>
 
             <TextView
                 style="@style/CategoryTitle"
@@ -46,7 +47,8 @@
 
                 <FrameLayout
                     style="@style/CategoryWrapper"
-                    android:onClick="openCategory">
+                    android:onClick="openCategory"
+                    android:id="@+id/curated">
 
                     <ImageView
                         style="@style/CategoryImage"
@@ -63,7 +65,8 @@
 
                 <FrameLayout
                     style="@style/CategoryWrapper"
-                    android:onClick="openCategory">
+                    android:onClick="openCategory"
+                    android:id="@+id/nightlife">
 
                     <ImageView
                         style="@style/CategoryImage"
@@ -89,13 +92,14 @@
 
                 <FrameLayout
                     style="@style/CategoryWrapper"
-                    android:onClick="openCategory">
+                    android:onClick="openCategory"
+                    android:id="@+id/food">
 
                 <ImageView
                     style="@style/CategoryImage"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:src="@drawable/eat_and_drink"/>
+                    android:layout_height="244dp"
+                    android:src="@drawable/food"/>
 
                     <TextView
                         style="@style/CategoryTitle"
@@ -118,7 +122,8 @@
                 android:layout_width="0dp"
                 android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:onClick="openCategory">
+                android:onClick="openCategory"
+                android:id="@+id/health">
 
                 <ImageView
                     style="@style/CategoryImage"
@@ -137,7 +142,8 @@
                 android:layout_width="0dp"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
-                android:onClick="openCategory">
+                android:onClick="openCategory"
+                android:id="@+id/culture">
 
             <ImageView
                 style="@style/CategoryImage"
