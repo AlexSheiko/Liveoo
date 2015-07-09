@@ -6,5 +6,7 @@
     <string name="facebook_note">We will never post to Facebook\nwithout your permission</string>
     <string name="login">L\u200ao\u200ag\u200ai\u200an</string>
     <string name="register">R\u200ae\u200ag\u200ai\u200as\u200at\u200ae\u200ar</string>
+    <string name="reset_password">R\u200ae\u200as\u200ae\u200at p\u200aa\u200as\u200as\u200aw\u200ao\u200ar\u200ad</string>
     <string name="restore_password_hint">Please enter your email address\nto reset your password</string>
+    <string name="reset_password_hint">Please set a new password below</string>
 </resources>

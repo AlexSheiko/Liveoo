@@ -32,7 +32,15 @@
         <activity
             android:name=".RestorePasswordActivity"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/LiveooTheme.NoActionBar">
+            android:theme="@style/LiveooTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveooapp.liveoo.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/LiveooTheme.NoActionBar"  >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveooapp.liveoo.LoginActivity" />
