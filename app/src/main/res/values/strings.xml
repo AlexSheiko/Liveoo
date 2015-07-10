@@ -11,4 +11,5 @@
     <string name="reset_password_hint">Please set a new password below</string>
     <string name="reset_success">Your password has been successfully reset\nand now you can log in</string>
     <string name="activity_main_title">Categories</string>
+    <string name="background_image_description">Background image</string>
 </resources>
