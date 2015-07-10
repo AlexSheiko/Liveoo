@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#EBEBEB</color>
+    <color name="primary">#57A0BB</color>
+    <color name="action_bar_background">@android:color/white</color>
+</resources>

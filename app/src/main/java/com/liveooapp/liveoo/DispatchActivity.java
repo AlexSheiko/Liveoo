@@ -10,6 +10,7 @@ public class DispatchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startActivity(new Intent(this, LoginActivity.class));
+        // TODO: Check for registered user
+        startActivity(new Intent(this, MainActivity.class));
     }
 }

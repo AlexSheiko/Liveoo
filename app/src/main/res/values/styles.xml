@@ -3,6 +3,15 @@
     <!-- Base application theme. -->
     <style name="LiveooTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="actionBarStyle">@style/LiveooActionBar</item>
+        <item name="android:actionBarStyle">@style/LiveooActionBar</item>
+    </style>
+
+    <style name="LiveooActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/action_bar_background</item>
+        <item name="background">@color/action_bar_background</item>
     </style>
 
     <style name="LiveooTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
@@ -18,9 +27,9 @@
     </style>
 
     <style name="FormElement">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">@dimen/form_element_width</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">48dp</item>
+        <item name="android:minHeight">@dimen/form_element_min_height</item>
     </style>
 
     <style name="InputField" parent="FormElement">
@@ -73,7 +82,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">bottom|right</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingRight">16dp</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
 
