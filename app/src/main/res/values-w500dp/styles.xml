@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="FormElement">
+        <item name="android:layout_width">500dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+</resources>

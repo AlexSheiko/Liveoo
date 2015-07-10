@@ -27,9 +27,9 @@
     </style>
 
     <style name="FormElement">
-        <item name="android:layout_width">@dimen/form_element_width</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">@dimen/form_element_min_height</item>
+        <item name="android:minHeight">48dp</item>
     </style>
 
     <style name="InputField" parent="FormElement">
