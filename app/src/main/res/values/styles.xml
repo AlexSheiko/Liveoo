@@ -14,8 +14,8 @@
         <item name="background">@color/action_bar_background</item>
     </style>
 
-    <style name="LiveooTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="LiveooTheme.Fullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="LiveooTheme.Translucent">
