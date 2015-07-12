@@ -10,7 +10,6 @@
               tools:context=".MainActivity">
 
     <FrameLayout
-        android:id="@+id/favourites"
         style="@style/CategoryWrapper"
         android:layout_height="0dp"
         android:layout_marginBottom="4dp"
@@ -33,9 +32,9 @@
             style="@style/CategoryTitle"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
             android:drawablePadding="8dp"
             android:drawableRight="@drawable/ic_favorite"
-            android:background="@android:color/transparent"
             android:text="My Favourites"/>
 
     </FrameLayout>
@@ -54,10 +53,9 @@
             android:orientation="vertical">
 
             <FrameLayout
-                android:id="@+id/curated"
+                style="@style/CategoryWrapper"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                style="@style/CategoryWrapper"
                 android:onClick="openCategory">
 
                 <ImageView
@@ -74,10 +72,9 @@
             </FrameLayout>
 
             <FrameLayout
-                android:id="@+id/nightlife"
+                style="@style/CategoryWrapper"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                style="@style/CategoryWrapper"
                 android:onClick="openCategory">
 
                 <ImageView
@@ -103,7 +100,6 @@
             android:orientation="vertical">
 
             <FrameLayout
-                android:id="@+id/food"
                 style="@style/CategoryWrapper"
                 android:layout_height="match_parent"
                 android:onClick="openCategory">
@@ -132,7 +128,6 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:id="@+id/health"
             style="@style/CategoryWrapper"
             android:layout_width="0dp"
             android:layout_marginRight="2dp"
@@ -152,7 +147,6 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/culture"
             style="@style/CategoryWrapper"
             android:layout_width="0dp"
             android:layout_marginLeft="2dp"

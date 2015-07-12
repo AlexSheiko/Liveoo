@@ -1,14 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
     android:id="@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#dd2018">
+    android:background="#dd2018"
+    android:theme="@style/LiveooTheme.Fullscreen">
 
-    <TextView
-        android:id="@+id/title"
+    <!--TODO: Load real event image with Picasso-->
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/event_image_sample"
+        tools:layout_height="260dp"/>
 
-</RelativeLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_favorite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#9b000000"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Steak, Chips and Cocktail"/>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Food and Drink"/>
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="May 19th @ 7:30 pm"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Vine Bar, Surufere"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="24dp"
+            android:paddingRight="29dp"
+            android:gravity="center"
+            android:background="#e7000000"
+            tools:text="₦5000"/>
+
+    </LinearLayout>
+
+</FrameLayout>

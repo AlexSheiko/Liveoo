@@ -31,9 +31,13 @@ public class ListingAdapter extends ArrayAdapter<Event> {
 
         ViewGroup containerView = (ViewGroup) rootView.findViewById(R.id.container);
         int screenWidth = getContext().getResources().getDisplayMetrics().widthPixels;
-        containerView.setLayoutParams(new AbsListView.LayoutParams(screenWidth, (int) (screenWidth * 0.7)));
+        containerView.setLayoutParams(new AbsListView.LayoutParams(screenWidth, (int) (screenWidth * 0.8)));
 
         ((TextView) rootView.findViewById(R.id.title)).setText(event.getTitle());
+        ((TextView) rootView.findViewById(R.id.category)).setText(event.getCategory());
+        ((TextView) rootView.findViewById(R.id.datetime)).setText(event.getDateTime());
+        ((TextView) rootView.findViewById(R.id.location)).setText(event.getLocation());
+        ((TextView) rootView.findViewById(R.id.price)).setText(event.getPrice());
 
         return rootView;
     }

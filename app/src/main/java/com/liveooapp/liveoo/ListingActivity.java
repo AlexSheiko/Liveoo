@@ -14,6 +14,9 @@ public class ListingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listing);
 
+        String category = getIntent().getStringExtra("category");
+        getSupportActionBar().setTitle(category);
+
         List<Event> eventList = new ArrayList<>();
         eventList.add(new Event());
         eventList.add(new Event());
