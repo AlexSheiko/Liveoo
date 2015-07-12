@@ -1,7 +1,9 @@
 package com.liveooapp.liveoo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -20,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         TextView categoryView = (TextView) container.getChildAt(container.getChildCount()-1);
         String category = categoryView.getText().toString();
         // TODO Open only selected category
-        Intent intent = new Intent(this, EventListActivity.class);
-        intent.putExtra("category", category);
-        startActivity(intent);
+        SharedPreferences sharedPrefs =
+                PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPrefs.edit().putString("category", category).apply();
+        startActivity(new Intent(this, EventListActivity.class));
     }
 }

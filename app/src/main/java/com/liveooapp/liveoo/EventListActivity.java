@@ -1,8 +1,12 @@
 package com.liveooapp.liveoo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -20,7 +24,8 @@ public class EventListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_list);
 
-        String category = getIntent().getStringExtra("category");
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        String category = sharedPrefs.getString("category", null);
         getSupportActionBar().setTitle(category);
 
         List<Event> eventList = new ArrayList<>();
@@ -37,5 +42,23 @@ public class EventListActivity extends AppCompatActivity {
                 startActivity(new Intent(EventListActivity.this, EventDetailActivity.class));
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_event_list, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_map) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

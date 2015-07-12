@@ -5,8 +5,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.liveooapp.liveoo.R;
@@ -33,7 +33,7 @@ public class EventAdapter extends ArrayAdapter<Event> {
 
         ViewGroup containerView = (ViewGroup) rootView.findViewById(R.id.container);
         int screenWidth = getContext().getResources().getDisplayMetrics().widthPixels;
-        containerView.setLayoutParams(new AbsListView.LayoutParams(screenWidth, (int) (screenWidth * 0.8)));
+        containerView.setLayoutParams(new LinearLayout.LayoutParams(screenWidth, (int) (screenWidth * 0.8)));
         int paddingX = getContext().getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
         int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
         containerView.setPadding(paddingX, 0, paddingX, paddingY);

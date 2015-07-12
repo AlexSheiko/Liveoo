@@ -2,5 +2,8 @@
 <resources>
     <string-array name="subcategories">
         <item>Select Category</item>
+        <item>Breakfast</item>
+        <item>Business Lunch</item>
+        <item>Dinner</item>
     </string-array>
 </resources>
