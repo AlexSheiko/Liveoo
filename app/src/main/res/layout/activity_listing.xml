@@ -1,17 +1,18 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout style="@style/MainContainer"
+              xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
               android:orientation="vertical"
               tools:context=".ListActivity">
 
     <Spinner
         style="@style/FormElement"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:entries="@array/subcategories"/>
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="@null"/>
 
 </LinearLayout>

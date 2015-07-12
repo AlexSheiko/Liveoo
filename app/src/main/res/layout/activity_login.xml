@@ -9,7 +9,7 @@
         tools:ignore="contentDescription"/>
 
     <LinearLayout
-        style="@style/Container">
+        style="@style/LoginContainer">
 
         <TextView
             style="@style/FormHeader"
