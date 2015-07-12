@@ -2,8 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">7dp</dimen>
     <dimen name="activity_vertical_margin">6dp</dimen>
-    <dimen name="grid_horizontal_margin">4dp</dimen>
-    <dimen name="grid_vertical_margin">5dp</dimen>
+    <dimen name="grid_horizontal_margin">6dp</dimen>
+    <dimen name="grid_vertical_margin">7dp</dimen>
     <dimen name="form_element_corner_radius">30dp</dimen>
     <dimen name="form_element_min_height">48dp</dimen>
 </resources>

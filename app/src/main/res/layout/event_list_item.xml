@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:foreground="?selectableItemBackground"
-    android:theme="@style/LiveooTheme.Fullscreen">
+    android:foreground="?selectableItemBackground">
 
     <!--TODO: Load real event image with Picasso-->
     <ImageView
@@ -23,11 +22,11 @@
         android:layout_height="24dp"
         android:layout_gravity="right"
         android:layout_marginRight="10dp"
-        android:focusable="false"
         android:layout_marginTop="10dp"
         android:background="@drawable/like_toggle_selector"
-        android:textOn=""
-        android:textOff=""/>
+        android:focusable="false"
+        android:textOff=""
+        android:textOn=""/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,32 +44,35 @@
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="match_parent"
+                style="@style/CardTextBody"
                 android:textSize="18sp"
-                android:layout_height="wrap_content"
-                tools:text="Steak, Chips and Cocktail"/>
+                tools:text="Steak, Chips &amp; Cocktail"/>
 
             <TextView
                 android:id="@+id/category"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/CardTextBody"
                 android:textSize="14sp"
+                android:textColor="#e3ffffff"
+                android:layout_marginBottom="3dp"
                 tools:text="Food and Drink"/>
 
             <TextView
                 android:id="@+id/datetime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/CardTextBody"
                 android:drawableLeft="@drawable/ic_calendar"
-                android:textSize="13sp"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:layout_marginBottom="1dp"
                 tools:text="May 19th @ 7:30 pm"/>
 
             <TextView
                 android:id="@+id/location"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
+                style="@style/CardTextBody"
                 android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
                 tools:text="Vine Bar, Surufere"/>
 
         </LinearLayout>
@@ -80,10 +82,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#e7000000"
-            android:textSize="22sp"
             android:gravity="center"
             android:paddingLeft="26dp"
             android:paddingRight="31dp"
+            android:textSize="22sp"
             tools:text="₦5000"/>
 
     </LinearLayout>

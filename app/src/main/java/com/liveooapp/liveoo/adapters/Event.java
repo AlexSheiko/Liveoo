@@ -13,7 +13,7 @@ public class Event {
     }
 
     public String getTitle() {
-        return "Steak, Chips and Cocktail";
+        return "Steak, Chips & Cocktail";
     }
 
     public String getCategory() {

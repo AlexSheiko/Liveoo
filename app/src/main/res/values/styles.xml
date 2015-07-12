@@ -97,6 +97,7 @@
         <item name="android:paddingRight">16dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@color/category_darkener</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="BackgroundImage">
@@ -121,6 +122,12 @@
     <style name="MainContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="CardTextBody">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#f3ffffff</item>
     </style>
 
 </resources>
