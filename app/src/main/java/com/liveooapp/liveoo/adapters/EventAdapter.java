@@ -38,7 +38,7 @@ public class EventAdapter extends ArrayAdapter<Event> {
         int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
         containerView.setPadding(paddingX, 0, paddingX, paddingY);
 
-        ((TextView) rootView.findViewById(R.id.title)).setText(event.getTitle());
+                ((TextView) rootView.findViewById(R.id.title)).setText(event.getTitle());
         ((TextView) rootView.findViewById(R.id.category)).setText(event.getCategory());
         ((TextView) rootView.findViewById(R.id.datetime)).setText(event.getDateTime());
         ((TextView) rootView.findViewById(R.id.location)).setText(event.getLocation());
