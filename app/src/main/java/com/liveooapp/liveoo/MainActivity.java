@@ -1,5 +1,6 @@
 package com.liveooapp.liveoo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCategory(View view) {
-        // TODO Open selected category
+        // TODO Open only selected category
+        startActivity(new Intent(this, ListingActivity.class));
     }
 }

@@ -3,4 +3,5 @@
     <color name="window_background">#EBEBEB</color>
     <color name="primary">#57A0BB</color>
     <color name="action_bar_background">@android:color/white</color>
+    <color name="category_darkener">#34000000</color>
 </resources>
