@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveooapp.liveoo.adapters;
 
 public class Event {
 

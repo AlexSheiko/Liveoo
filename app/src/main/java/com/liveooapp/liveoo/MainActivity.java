@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         TextView categoryView = (TextView) container.getChildAt(container.getChildCount()-1);
         String category = categoryView.getText().toString();
         // TODO Open only selected category
-        Intent intent = new Intent(this, ListingActivity.class);
+        Intent intent = new Intent(this, EventListActivity.class);
         intent.putExtra("category", category);
         startActivity(intent);
     }

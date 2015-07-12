@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveooapp.liveoo.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,11 +9,13 @@ import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.liveooapp.liveoo.R;
+
 import java.util.List;
 
-public class ListingAdapter extends ArrayAdapter<Event> {
+public class EventAdapter extends ArrayAdapter<Event> {
 
-    public ListingAdapter(Context context, List<Event> eventList) {
+    public EventAdapter(Context context, List<Event> eventList) {
         super(context, 0, eventList);
     }
 
@@ -24,7 +26,7 @@ public class ListingAdapter extends ArrayAdapter<Event> {
             rootView = convertView;
         } else {
             LayoutInflater inflater = ((Activity) getContext()).getLayoutInflater();
-            rootView = inflater.inflate(R.layout.listing_item, null);
+            rootView = inflater.inflate(R.layout.event_list_item, null);
         }
 
         Event event = getItem(position);
@@ -32,8 +34,9 @@ public class ListingAdapter extends ArrayAdapter<Event> {
         ViewGroup containerView = (ViewGroup) rootView.findViewById(R.id.container);
         int screenWidth = getContext().getResources().getDisplayMetrics().widthPixels;
         containerView.setLayoutParams(new AbsListView.LayoutParams(screenWidth, (int) (screenWidth * 0.8)));
-        int padding = convertToPixels(4);
-        containerView.setPadding(padding, 0, padding, padding);
+        int paddingX = getContext().getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
+        int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
+        containerView.setPadding(paddingX, 0, paddingX, paddingY);
 
         ((TextView) rootView.findViewById(R.id.title)).setText(event.getTitle());
         ((TextView) rootView.findViewById(R.id.category)).setText(event.getCategory());
@@ -42,10 +45,5 @@ public class ListingAdapter extends ArrayAdapter<Event> {
         ((TextView) rootView.findViewById(R.id.price)).setText(event.getPrice());
 
         return rootView;
-    }
-
-    public int convertToPixels(int dp) {
-        float density = getContext().getResources().getDisplayMetrics().density;
-        return (int) (dp * density);
     }
 }

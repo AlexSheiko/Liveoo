@@ -57,11 +57,18 @@
                 android:value="com.liveooapp.liveoo.LoginActivity" />
         </activity>
         <activity
-            android:name=".ListingActivity"
+            android:name=".EventListActivity"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveooapp.liveoo.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EventDetailActivity"
+            android:parentActivityName=".EventListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveooapp.liveoo.EventListActivity" />
         </activity>
     </application>
 

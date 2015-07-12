@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="?selectableItemBackground"
     android:theme="@style/LiveooTheme.Fullscreen">
 
     <!--TODO: Load real event image with Picasso-->
@@ -42,6 +44,7 @@
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
+                android:textSize="18sp"
                 android:layout_height="wrap_content"
                 tools:text="Steak, Chips and Cocktail"/>
 
@@ -49,18 +52,23 @@
                 android:id="@+id/category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="14sp"
                 tools:text="Food and Drink"/>
 
             <TextView
                 android:id="@+id/datetime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:textSize="13sp"
                 tools:text="May 19th @ 7:30 pm"/>
 
             <TextView
                 android:id="@+id/location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:drawableLeft="@drawable/ic_location"
                 tools:text="Vine Bar, Surufere"/>
 
         </LinearLayout>
@@ -70,9 +78,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#e7000000"
+            android:textSize="22sp"
             android:gravity="center"
-            android:paddingLeft="24dp"
-            android:paddingRight="29dp"
+            android:paddingLeft="26dp"
+            android:paddingRight="31dp"
             tools:text="₦5000"/>
 
     </LinearLayout>
