@@ -11,6 +11,6 @@ public class DispatchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // TODO: Check for registered user
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
     }
 }

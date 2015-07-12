@@ -1,159 +1,116 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/grid_vertical_padding"
+              android:paddingLeft="@dimen/grid_horizontal_padding"
+              android:paddingRight="@dimen/grid_horizontal_padding"
+              android:paddingTop="@dimen/grid_vertical_padding"
+              tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/favourites"
+        style="@style/CategoryWrapper"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:onClick="openCategory">
+
+        <ImageView
+            style="@style/CategoryImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true"
-            tools:context=".MainActivity">
+            android:src="@drawable/favourites"/>
+
+        <!--TODO: Decrease heart icon size-->
+        <TextView
+            style="@style/CategoryTitle"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_favorite"
+            android:text="My Favourites"/>
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/grid_padding">
-
-        <FrameLayout
-            android:id="@+id/favourites"
-            style="@style/CategoryWrapper"
-            android:layout_marginBottom="4dp"
-            android:onClick="openCategory">
-
-            <ImageView
-                style="@style/CategoryImage"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/favourites"/>
-
-            <TextView
-                style="@style/CategoryTitle"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:drawablePadding="8dp"
-                android:drawableRight="@drawable/ic_favorite"
-                android:text="My Favourites"/>
-
-        </FrameLayout>
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    style="@style/CategoryWrapper"
-                    android:onClick="openCategory"
-                    android:id="@+id/curated">
-
-                    <ImageView
-                        style="@style/CategoryImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:layout_marginBottom="2dp"
-                        android:src="@drawable/curated"/>
-
-                    <TextView
-                        style="@style/CategoryTitle"
-                        android:text="Curated"/>
-
-                </FrameLayout>
-
-                <FrameLayout
-                    style="@style/CategoryWrapper"
-                    android:onClick="openCategory"
-                    android:id="@+id/nightlife">
-
-                    <ImageView
-                        style="@style/CategoryImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="120dp"
-                        android:layout_marginTop="2dp"
-                        android:src="@drawable/nightlife"/>
-
-                    <TextView
-                        style="@style/CategoryTitle"
-                        android:text="Performance and\nNightlife"/>
-
-                </FrameLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="2dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    style="@style/CategoryWrapper"
-                    android:onClick="openCategory"
-                    android:id="@+id/food">
-
-                <ImageView
-                    style="@style/CategoryImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="244dp"
-                    android:src="@drawable/food"/>
-
-                    <TextView
-                        style="@style/CategoryTitle"
-                        android:text="Eat and Drink"/>
-
-                </FrameLayout>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <FrameLayout
-                style="@style/CategoryWrapper"
-                android:layout_width="0dp"
-                android:layout_marginRight="2dp"
+                android:id="@+id/curated"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="openCategory"
-                android:id="@+id/health">
+                style="@style/CategoryWrapper"
+                android:onClick="openCategory">
 
                 <ImageView
                     style="@style/CategoryImage"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/get_healthy"/>
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/curated"/>
 
                 <TextView
                     style="@style/CategoryTitle"
-                    android:text="Get Healthy"/>
+                    android:text="Curated"/>
 
             </FrameLayout>
 
             <FrameLayout
-                style="@style/CategoryWrapper"
-                android:layout_width="0dp"
-                android:layout_marginLeft="2dp"
+                android:id="@+id/nightlife"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="openCategory"
-                android:id="@+id/culture">
+                style="@style/CategoryWrapper"
+                android:onClick="openCategory">
 
-            <ImageView
-                style="@style/CategoryImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/culture"/>
+                <ImageView
+                    style="@style/CategoryImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/nightlife"/>
 
                 <TextView
                     style="@style/CategoryTitle"
-                    android:text="Culture"/>
+                    android:text="Performance and\nNightlife"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/food"
+                style="@style/CategoryWrapper"
+                android:layout_height="match_parent"
+                android:onClick="openCategory">
+
+                <ImageView
+                    style="@style/CategoryImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/food"/>
+
+                <TextView
+                    style="@style/CategoryTitle"
+                    android:text="Eat and Drink"/>
 
             </FrameLayout>
 
@@ -161,4 +118,53 @@
 
     </LinearLayout>
 
-</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/health"
+            style="@style/CategoryWrapper"
+            android:layout_width="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:onClick="openCategory">
+
+            <ImageView
+                style="@style/CategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/get_healthy"/>
+
+            <TextView
+                style="@style/CategoryTitle"
+                android:text="Get Healthy"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/culture"
+            style="@style/CategoryWrapper"
+            android:layout_width="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:onClick="openCategory">
+
+            <ImageView
+                style="@style/CategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/culture"/>
+
+            <TextView
+                style="@style/CategoryTitle"
+                android:text="Culture"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
