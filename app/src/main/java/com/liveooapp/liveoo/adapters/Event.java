@@ -2,14 +2,21 @@ package com.liveooapp.liveoo.adapters;
 
 public class Event {
 
+    private int mId;
+
     private String mTitle;
     private String mCategory;
     private String mDateTime;
     private String mLocation;
     private String mPrice;
 
-    public Event() {
+    public Event(int id) {
+        mId = id;
         // TODO: Remove empty constructor when using Retrofit
+    }
+
+    public int getId() {
+        return mId;
     }
 
     public String getTitle() {

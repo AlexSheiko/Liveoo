@@ -15,6 +15,7 @@ import com.liveooapp.liveoo.adapters.Event;
 import com.liveooapp.liveoo.adapters.EventAdapter;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class EventListActivity extends AppCompatActivity {
@@ -29,9 +30,10 @@ public class EventListActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(category);
 
         List<Event> eventList = new ArrayList<>();
-        eventList.add(new Event());
-        eventList.add(new Event());
-        eventList.add(new Event());
+        eventList.add(new Event(1));
+        eventList.add(new Event(2));
+        eventList.add(new Event(3));
+        Collections.shuffle(eventList);
 
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(new EventAdapter(this, eventList));

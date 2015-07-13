@@ -41,13 +41,13 @@ public class EventAdapter extends ArrayAdapter<Event> {
         int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
         containerView.setPadding(paddingX, 0, paddingX, paddingY);
 
-        if (position == 0) {
+        if (event.getId() == 1) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_event_1));
-        } else if (position == 1) {
+        } else if (event.getId() == 2) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_event_2));
-        } else if (position == 2) {
+        } else if (event.getId() == 3) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_event_3));
         }
