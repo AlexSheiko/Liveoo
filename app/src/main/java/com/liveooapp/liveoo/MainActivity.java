@@ -39,8 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                startActivity(new Intent(this, SettingsActivity.class));
+                return true;
+            case R.id.action_tickets:
+                startActivity(new Intent(this, TicketListActivity.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

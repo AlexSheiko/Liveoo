@@ -8,6 +8,7 @@
         <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
         <item name="actionBarSize">64dp</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="actionOverflowButtonStyle">@style/ActionButtonOverflow</item>
         <!--TODO: Change touch highlight to white-->
     </style>
 
@@ -16,6 +17,10 @@
         <item name="background">@color/action_bar_background</item>
         <item name="elevation">0dp</item>
         <!--TODO: Add left padding to action bar title-->
+    </style>
+
+    <style name="ActionButtonOverflow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_overflow_menu</item>
     </style>
 
     <style name="LiveooTheme.Fullscreen" parent="Theme.AppCompat.NoActionBar">

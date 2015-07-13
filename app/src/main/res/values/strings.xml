@@ -21,4 +21,5 @@
     <string name="title_activity_ticket_pay">Payment Details</string>
     <string name="title_activity_ticket_result">Thank You</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="action_tickets">My Tickets</string>
 </resources>
