@@ -53,7 +53,7 @@
 
             <TextView
                 style="@style/KeyValueText"
-                android:text="10th June, 2015 / 21:30 pm"/>
+                android:text="10th June, 2015 / 9:30 pm"/>
 
         </LinearLayout>
 
