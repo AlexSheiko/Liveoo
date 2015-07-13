@@ -1,10 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true"
-            android:scrollbars="none"
-            tools:context=".TicketBookActivity">
+            tools:context=".TicketBookActivity"
+            style="@style/ScrollContainer">
 
     <LinearLayout
         style="@style/MainContainer"
@@ -32,11 +29,11 @@
                 <TextView
                     style="@style/KeyValueText"
                     android:layout_width="122dp"
-                    android:text="Location"/>
+                    android:text="Date"/>
 
                 <TextView
                     style="@style/KeyValueText"
-                    android:text="123, Road Name, City"/>
+                    android:text="10th June, 2015"/>
 
             </LinearLayout>
 
@@ -44,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginLeft="15dp"
-                android:background="#dadada"/>
+                android:background="@color/divider"/>
 
         </LinearLayout>
 
@@ -54,27 +51,27 @@
             <TextView
                 style="@style/KeyValueText"
                 android:layout_width="122dp"
-                android:text="Date / Time"/>
+                android:text="Time"/>
 
             <TextView
                 style="@style/KeyValueText"
-                android:text="10th June, 2015 / 21:30 pm"/>
+                android:text="9:30 pm"/>
 
         </LinearLayout>
 
         <LinearLayout
             style="@style/KeyValueContainer"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="40dp"
             android:layout_marginTop="20dp">
 
             <TextView
                 style="@style/KeyValueText"
                 android:layout_width="122dp"
-                android:text="Choose Ticket"/>
+                android:text="Tickets"/>
 
             <TextView
                 style="@style/KeyValueText"
-                android:text="Select Ticket"/>
+                android:text="Select ticket amount"/>
 
         </LinearLayout>
 
@@ -85,6 +82,7 @@
             android:layout_marginRight="18dp"
             android:layout_marginTop="@dimen/bottom_section_padding"
             android:text="@string/book_now"
+            android:onClick="bookTicket"
             android:textAllCaps="false"/>
 
     </LinearLayout>

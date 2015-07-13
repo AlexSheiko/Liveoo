@@ -18,4 +18,5 @@
     <string name="book_now">Book Now</string>
     <string name="invite">Invite</string>
     <string name="title_activity_ticket_book">Event Booking</string>
+    <string name="title_activity_ticket_pay">Payment Details</string>
 </resources>

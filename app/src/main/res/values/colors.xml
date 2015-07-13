@@ -6,4 +6,5 @@
     <color name="category_darkener">#34000000</color>
     <color name="action_bar_title">#282828</color>
     <color name="text_primary">#282828</color>
+    <color name="divider">#dadada</color>
 </resources>
