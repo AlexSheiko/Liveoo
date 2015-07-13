@@ -20,4 +20,5 @@
     <string name="title_activity_ticket_book">Event Booking</string>
     <string name="title_activity_ticket_pay">Payment Details</string>
     <string name="title_activity_ticket_result">Thank You</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>

@@ -1,0 +1,105 @@
+<ScrollView
+    style="@style/ScrollContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        style="@style/MainContainer"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:text="Name, Phone, Email"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="Notifications"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="Tags"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="Frequently Asked Questions"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="Terms and Conditions"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:text="Privacy Policy"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/ButtonPrimary"
+                android:layout_gravity="bottom"
+                android:textAllCaps="false"
+                android:text="Log Out"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
