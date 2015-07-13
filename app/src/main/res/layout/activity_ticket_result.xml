@@ -1,0 +1,220 @@
+<ScrollView
+    style="@style/ScrollContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TicketResultActivity">
+
+    <LinearLayout
+        style="@style/MainContainer"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Your booking has been received, and a summary of your payment is below:"
+            android:textColor="@color/text_primary"
+            android:gravity="center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="24dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Class / Event"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Steak, Chips &amp; Cocktail"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Primary Registrant"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₦12345"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Payment Type"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Webpay"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Payment Status"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incomplete"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Registration ID"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-giroe39404-48gndk-1"
+                android:singleLine="true"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Transaction ID"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-giroe39404-48gndk-1-1"
+                android:singleLine="true"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+    </LinearLayout>
+
+</ScrollView>
