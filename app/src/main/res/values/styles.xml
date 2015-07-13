@@ -7,9 +7,10 @@
         <item name="actionBarStyle">@style/LiveooActionBar</item>
         <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
         <item name="actionBarSize">64dp</item>
+        <!--TODO: Change touch highlight to white-->
     </style>
 
-    <style name="LiveooActionBar" parent="Widget.AppCompat.ActionBar">
+    <style name="LiveooActionBar" parent="Widget.AppCompat.Light.ActionBar">
         <item name="android:background">@color/action_bar_background</item>
         <item name="background">@color/action_bar_background</item>
         <item name="elevation">0dp</item>
@@ -50,10 +51,15 @@
         <item name="android:background">@drawable/primary_button_selector</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#e6ffffff</item>
     </style>
 
     <style name="ButtonSecondary" parent="ButtonPrimary">
         <item name="android:background">@drawable/secondary_button_selector</item>
+    </style>
+
+    <style name="ButtonUber" parent="ButtonPrimary">
+        <item name="android:background">@drawable/uber_button_selector</item>
     </style>
 
     <style name="TextLabel">
@@ -128,6 +134,23 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:textColor">#f3ffffff</item>
+    </style>
+
+    <style name="KeyValueContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="KeyValueText">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 
 </resources>

@@ -1,16 +1,137 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/grid_horizontal_margin"
-                android:paddingRight="@dimen/grid_horizontal_margin"
-                android:paddingTop="@dimen/grid_vertical_margin"
-                android:paddingBottom="@dimen/grid_vertical_margin"
-                tools:context=".EventDetailActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".EventDetailActivity">
+
+    <include
+        layout="@layout/event_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        style="@style/KeyValueContainer">
+
+        <TextView
+            style="@style/KeyValueText"
+            android:layout_width="122dp"
+            android:text="Location"/>
+
+        <TextView
+            style="@style/KeyValueText"
+            android:text="123, Road Name, City"/>
+
+    </LinearLayout>
 
     <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="18dp"
+        android:paddingBottom="20dp"
+        android:lineSpacingMultiplier="1.05"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nisi magna. Vestibulum vulputate lorem tristique metus elementum efficitur."
+        android:textColor="@color/text_primary"/>
 
-</RelativeLayout>
+    <LinearLayout
+        style="@style/KeyValueContainer">
+
+        <TextView
+            style="@style/KeyValueText"
+            android:layout_width="122dp"
+            android:text="Date / Time"/>
+
+        <TextView
+            style="@style/KeyValueText"
+            android:text="10th June, 2015 / 21:30 pm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada"
+            android:layout_marginLeft="15dp"/>
+
+        <LinearLayout
+            style="@style/KeyValueContainer">
+
+            <TextView
+                style="@style/KeyValueText"
+                android:layout_width="122dp"
+                android:text="Choose Ticket"/>
+
+            <TextView
+                style="@style/KeyValueText"
+                android:text="Select Ticket"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ButtonUber"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_uber"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:text="Get an Uber"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/ButtonSecondary"
+            android:layout_width="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/invite"
+            android:textAllCaps="false"/>
+
+        <Button
+            style="@style/ButtonPrimary"
+            android:layout_width="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="@string/book_now"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

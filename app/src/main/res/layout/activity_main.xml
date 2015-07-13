@@ -67,7 +67,8 @@
 
                 <TextView
                     style="@style/CategoryTitle"
-                    android:text="Curated"/>
+                    android:text="Curated"
+                    android:textSize="16sp"/>
 
             </FrameLayout>
 
@@ -112,7 +113,8 @@
 
                 <TextView
                     style="@style/CategoryTitle"
-                    android:text="Eat and Drink"/>
+                    android:text="Eat and Drink"
+                    android:textSize="16sp"/>
 
             </FrameLayout>
 
@@ -163,7 +165,8 @@
 
             <TextView
                 style="@style/CategoryTitle"
-                android:text="Culture"/>
+                android:text="Culture"
+                android:textSize="15.5sp"/>
 
         </FrameLayout>
 

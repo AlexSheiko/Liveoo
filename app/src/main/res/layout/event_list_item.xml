@@ -16,18 +16,6 @@
         android:src="@drawable/event_image_sample"
         tools:layout_height="260dp"/>
 
-    <ToggleButton
-        android:id="@+id/toggle_like"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_gravity="right"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/like_toggle_selector"
-        android:focusable="false"
-        android:textOff=""
-        android:textOn=""/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#9b000000"
+            android:background="#92000000"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -46,15 +34,15 @@
                 android:id="@+id/title"
                 style="@style/CardTextBody"
                 android:textSize="18sp"
-                tools:text="Steak, Chips &amp; Cocktail"/>
+                android:text="Steak, Chips &amp; Cocktail"/>
 
             <TextView
                 android:id="@+id/category"
                 style="@style/CardTextBody"
                 android:textSize="14sp"
                 android:textColor="#e3ffffff"
-                android:layout_marginBottom="3dp"
-                tools:text="Food and Drink"/>
+                android:layout_marginBottom="4dp"
+                android:text="Food and Drink"/>
 
             <TextView
                 android:id="@+id/datetime"
@@ -62,9 +50,9 @@
                 android:drawableLeft="@drawable/ic_calendar"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
-                android:textSize="12sp"
+                android:textSize="11sp"
                 android:layout_marginBottom="1dp"
-                tools:text="May 19th @ 7:30 pm"/>
+                android:text="May 19th @ 7:30 pm"/>
 
             <TextView
                 android:id="@+id/location"
@@ -72,22 +60,35 @@
                 android:drawableLeft="@drawable/ic_location"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
-                android:textSize="12sp"
-                tools:text="Vine Bar, Surufere"/>
+                android:textSize="11sp"
+                android:text="Vine Bar, Surufere"/>
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/price"
+            style="@style/CardTextBody"
+            android:background="#cd000000"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#e7000000"
             android:gravity="center"
             android:paddingLeft="26dp"
             android:paddingRight="31dp"
-            android:textSize="22sp"
-            tools:text="₦5000"/>
+            android:textSize="21sp"
+            android:text="₦5000"/>
 
     </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggle_like"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/like_toggle_selector"
+        android:focusable="false"
+        android:textOff=""
+        android:textOn=""/>
 
 </FrameLayout>

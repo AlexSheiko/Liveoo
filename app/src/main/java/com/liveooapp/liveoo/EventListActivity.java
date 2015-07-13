@@ -53,12 +53,9 @@ public class EventListActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_map) {
+        if (item.getItemId() == R.id.action_map) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
