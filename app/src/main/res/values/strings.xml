@@ -12,7 +12,7 @@
     <string name="reset_success">Your password has been successfully reset\nand now you can log in</string>
     <string name="activity_main_title">Categories</string>
     <string name="background_image_description">Background image</string>
-    <string name="title_activity_ticket_list">TicketListActivity</string>
+    <string name="title_activity_ticket_list">My Tickets</string>
     <string name="action_map">Open map</string>
     <string name="share">Share</string>
     <string name="book_now">Book Now</string>
