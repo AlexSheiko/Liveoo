@@ -36,12 +36,19 @@ public class TicketAdapter extends ArrayAdapter<Ticket> {
         ((TextView) rootView.findViewById(R.id.datetime)).setText(ticket.getDateTime());
         ((TextView) rootView.findViewById(R.id.location)).setText(ticket.getLocation());
 
-        if (position == 1) {
+        if (position == 0) {
+            ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
+                    getContext().getResources().getDrawable(R.drawable.ic_ticket_1));
+        } else if (position == 1) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_ticket_2));
         } else if (position == 2) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_ticket_3));
+        }
+
+        if (position + 1 == getCount()) {
+            rootView.findViewById(R.id.divider).setVisibility(View.GONE);
         }
 
         return rootView;

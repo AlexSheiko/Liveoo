@@ -5,6 +5,7 @@
     android:orientation="vertical"
     tools:context=".EventListActivity">
 
+    <!--TODO: Add real spinner background-->
     <Spinner
         style="@style/FormElement"
         android:layout_marginTop="10dp"

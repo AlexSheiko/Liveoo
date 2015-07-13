@@ -1,7 +1,10 @@
 package com.liveooapp.liveoo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.liveooapp.liveoo.adapters.Ticket;
@@ -24,6 +27,11 @@ public class TicketListActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(new TicketAdapter(this, ticketList));
-        // listView.setOnItemClickListener();
+         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+             @Override
+             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 startActivity(new Intent(TicketListActivity.this, TicketDetailActivity.class));
+             }
+         });
     }
 }

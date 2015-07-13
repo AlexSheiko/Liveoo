@@ -119,6 +119,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveooapp.liveoo.MainActivity" />
         </activity>
+        <activity
+            android:name=".TicketDetailActivity"
+            android:label="@string/title_activity_ticket_detail"
+            android:parentActivityName=".TicketListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveooapp.liveoo.TicketListActivity" />
+        </activity>
     </application>
 
 </manifest>

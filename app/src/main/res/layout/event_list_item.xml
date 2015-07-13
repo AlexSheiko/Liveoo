@@ -9,11 +9,11 @@
 
     <!--TODO: Load real event image with Picasso-->
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/icon"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/event_image_sample"
+        tools:src="@drawable/ic_event_1"
         tools:layout_height="260dp"/>
 
     <LinearLayout

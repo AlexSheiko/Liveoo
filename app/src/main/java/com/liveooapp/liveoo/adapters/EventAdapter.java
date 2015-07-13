@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import com.liveooapp.liveoo.R;
 
@@ -39,6 +40,17 @@ public class EventAdapter extends ArrayAdapter<Event> {
         int paddingX = getContext().getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
         int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
         containerView.setPadding(paddingX, 0, paddingX, paddingY);
+
+        if (position == 0) {
+            ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
+                    getContext().getResources().getDrawable(R.drawable.ic_event_1));
+        } else if (position == 1) {
+            ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
+                    getContext().getResources().getDrawable(R.drawable.ic_event_2));
+        } else if (position == 2) {
+            ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
+                    getContext().getResources().getDrawable(R.drawable.ic_event_3));
+        }
 
         /*
         ((TextView) rootView.findViewById(R.id.title)).setText(event.getTitle());
