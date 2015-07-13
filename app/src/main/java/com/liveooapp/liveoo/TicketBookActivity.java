@@ -1,21 +1,16 @@
 package com.liveooapp.liveoo;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class EventDetailActivity extends AppCompatActivity {
+public class TicketBookActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_detail);
-
-        // TODO: Show real event name in activity title
-        getSupportActionBar().setTitle("Steak, Chips & Cocktail");
+        setContentView(R.layout.activity_ticket_book);
     }
 
     @Override
@@ -31,9 +26,5 @@ public class EventDetailActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void bookTicket(View view) {
-        startActivity(new Intent(this, TicketBookActivity.class));
     }
 }

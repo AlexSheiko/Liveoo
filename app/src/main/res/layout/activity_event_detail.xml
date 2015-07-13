@@ -1,8 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              style="@style/MainContainer"
               android:orientation="vertical"
               tools:context=".EventDetailActivity">
 
@@ -89,6 +87,7 @@
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
         android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
         android:elevation="2dp">
@@ -130,6 +129,7 @@
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:text="@string/book_now"
+            android:onClick="bookTicket"
             android:textAllCaps="false"/>
 
     </LinearLayout>
