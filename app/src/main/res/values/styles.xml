@@ -63,6 +63,10 @@
         <item name="android:background">@drawable/uber_button_selector</item>
     </style>
 
+    <style name="ButtonFacebook" parent="ButtonPrimary">
+        <item name="android:background">@drawable/facebook_button_selector</item>
+    </style>
+
     <style name="TextLabel">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

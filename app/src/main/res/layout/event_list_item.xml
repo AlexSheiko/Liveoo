@@ -34,13 +34,15 @@
                 android:id="@+id/title"
                 style="@style/CardTextBody"
                 android:textSize="18sp"
+                android:singleLine="true"
                 android:text="Steak, Chips &amp; Cocktail"/>
 
             <TextView
                 android:id="@+id/category"
                 style="@style/CardTextBody"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:textColor="#e3ffffff"
+                android:layout_marginTop="-2dp"
                 android:layout_marginBottom="4dp"
                 android:text="Food and Drink"/>
 
@@ -50,7 +52,8 @@
                 android:drawableLeft="@drawable/ic_calendar"
                 android:drawablePadding="4dp"
                 android:gravity="center_vertical"
-                android:textSize="11sp"
+                android:textSize="10sp"
+                android:layout_marginLeft="-1dp"
                 android:layout_marginBottom="1dp"
                 android:text="May 19th @ 7:30 pm"/>
 
@@ -59,8 +62,9 @@
                 style="@style/CardTextBody"
                 android:drawableLeft="@drawable/ic_location"
                 android:drawablePadding="4dp"
+                android:layout_marginLeft="-1dp"
                 android:gravity="center_vertical"
-                android:textSize="11sp"
+                android:textSize="10sp"
                 android:text="Vine Bar, Surufere"/>
 
         </LinearLayout>
@@ -74,7 +78,7 @@
             android:gravity="center"
             android:paddingLeft="26dp"
             android:paddingRight="31dp"
-            android:textSize="21sp"
+            android:textSize="20sp"
             android:text="₦5000"/>
 
     </LinearLayout>

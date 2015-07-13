@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 public class EventDetailActivity extends AppCompatActivity {
 
@@ -16,6 +18,15 @@ public class EventDetailActivity extends AppCompatActivity {
 
         // TODO: Show real event name in activity title
         getSupportActionBar().setTitle("Steak, Chips & Cocktail");
+
+        // set height to a card
+        FrameLayout containerView = (FrameLayout) findViewById(R.id.container);
+        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+        containerView.setLayoutParams(new LinearLayout.LayoutParams(screenWidth, (int) (screenWidth * 0.55)));
+        // set paddings
+        int paddingX = getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
+        int paddingY = getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
+        containerView.setPadding(paddingX, 0, paddingX, paddingY);
     }
 
     @Override
@@ -35,5 +46,9 @@ public class EventDetailActivity extends AppCompatActivity {
 
     public void bookTicket(View view) {
         startActivity(new Intent(this, TicketBookActivity.class));
+    }
+
+    public void inviteFriends(View view) {
+        startActivity(new Intent(this, FriendsInviteActivity.class));
     }
 }

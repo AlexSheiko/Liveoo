@@ -3,7 +3,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fillViewport="true"
-            tools:context=".EventDetailActivity">
+            android:scrollbars="none"
+            tools:context=".FriendsInviteActivity">
 
     <LinearLayout
         style="@style/MainContainer"
@@ -28,7 +29,7 @@
 
             <TextView
                 style="@style/KeyValueText"
-                android:text="123, Road Name, City"/>
+                android:text="Vine bar, Surulere"/>
 
         </LinearLayout>
 
@@ -49,11 +50,11 @@
             <TextView
                 style="@style/KeyValueText"
                 android:layout_width="122dp"
-                android:text="Date / Time"/>
+                android:text="Date"/>
 
             <TextView
                 style="@style/KeyValueText"
-                android:text="10th June, 2015 / 21:30 pm"/>
+                android:text="10th June, 2015"/>
 
         </LinearLayout>
 
@@ -61,8 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
-            android:orientation="vertical"
-            android:layout_marginBottom="@dimen/bottom_section_padding">
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical">
 
             <View
                 android:layout_width="match_parent"
@@ -76,70 +77,78 @@
                 <TextView
                     style="@style/KeyValueText"
                     android:layout_width="122dp"
-                    android:text="Choose Ticket"/>
+                    android:text="Time"/>
 
                 <TextView
                     style="@style/KeyValueText"
-                    android:text="Select Ticket"/>
+                    android:text="9:30 pm"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/bottom_section_padding">
+
             <LinearLayout
-                style="@style/ButtonUber"
-                android:layout_width="match_parent"
-                android:layout_marginBottom="1dp"
-                android:layout_marginLeft="18dp"
-                android:layout_marginRight="18dp"
-                android:layout_marginTop="13dp"
+                style="@style/ButtonFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
                 android:elevation="2dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="23dp"
-                    android:layout_height="23dp"
-                    android:layout_marginRight="15dp"
-                    android:src="@drawable/ic_uber"/>
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_facebook"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="24dp"
-                    android:text="Get an Uber"
+                    android:layout_marginRight="8dp"
+                    android:text="Invite friends"
                     android:textColor="@android:color/white"
-                    android:textSize="20sp"/>
+                    android:textSize="16sp"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                style="@style/ButtonSecondary"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="18dp"
-                android:layout_marginRight="18dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <Button
-                    style="@style/ButtonSecondary"
-                    android:layout_width="wrap_content"
-                    android:onClick="inviteFriends"
-                    android:paddingLeft="40dp"
-                    android:paddingRight="40dp"
-                    android:text="@string/invite"
-                    android:textAllCaps="false"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_contacts"/>
 
-                <Button
-                    style="@style/ButtonPrimary"
-                    android:layout_width="0dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_weight="1"
-                    android:onClick="bookTicket"
-                    android:text="@string/book_now"
-                    android:textAllCaps="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Invite Contacts"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"/>
 
             </LinearLayout>
 
         </LinearLayout>
+
+    </LinearLayout>
 
 </ScrollView>

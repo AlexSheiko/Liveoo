@@ -84,6 +84,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveooapp.liveoo.EventDetailActivity" />
         </activity>
+        <activity
+            android:name=".FriendsInviteActivity"
+            android:parentActivityName=".EventDetailActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveooapp.liveoo.EventDetailActivity" />
+        </activity>
     </application>
 
 </manifest>

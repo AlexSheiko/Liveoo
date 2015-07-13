@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 
 import com.liveooapp.liveoo.R;
 
@@ -30,9 +31,11 @@ public class EventAdapter extends ArrayAdapter<Event> {
 
         Event event = getItem(position);
 
-        ViewGroup containerView = (ViewGroup) rootView.findViewById(R.id.container);
+        // set height to a card
+        FrameLayout containerView = (FrameLayout) rootView.findViewById(R.id.container);
         int screenWidth = getContext().getResources().getDisplayMetrics().widthPixels;
         containerView.setLayoutParams(new AbsListView.LayoutParams(screenWidth, (int) (screenWidth * 0.8)));
+        // set paddings
         int paddingX = getContext().getResources().getDimensionPixelSize(R.dimen.activity_horizontal_margin);
         int paddingY = getContext().getResources().getDimensionPixelSize(R.dimen.activity_vertical_margin);
         containerView.setPadding(paddingX, 0, paddingX, paddingY);

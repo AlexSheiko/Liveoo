@@ -1,63 +1,71 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context=".TicketBookActivity">
-
-    <include
-        layout="@layout/event_list_item"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="9dp"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_weight="1"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            tools:context=".TicketBookActivity">
 
     <LinearLayout
-        style="@style/KeyValueContainer">
-
-        <TextView
-            style="@style/KeyValueText"
-            android:layout_width="122dp"
-            android:text="Location"/>
-
-        <TextView
-            style="@style/KeyValueText"
-            android:text="123, Road Name, City"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        style="@style/KeyValueContainer">
-
-        <TextView
-            style="@style/KeyValueText"
-            android:layout_width="122dp"
-            android:text="Date / Time"/>
-
-        <TextView
-            style="@style/KeyValueText"
-            android:text="10th June, 2015 / 21:30 pm"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/white"
+        style="@style/MainContainer"
         android:orientation="vertical">
 
-        <View
+        <include
+            layout="@layout/event_list_item"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="15dp"
-            android:background="#dadada"/>
+            android:layout_height="200dp"
+            tools:layout_marginBottom="9dp"
+            tools:layout_marginLeft="@dimen/activity_horizontal_margin"
+            tools:layout_marginRight="@dimen/activity_horizontal_margin"
+            tools:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/KeyValueContainer">
+
+                <TextView
+                    style="@style/KeyValueText"
+                    android:layout_width="122dp"
+                    android:text="Location"/>
+
+                <TextView
+                    style="@style/KeyValueText"
+                    android:text="123, Road Name, City"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="#dadada"/>
+
+        </LinearLayout>
 
         <LinearLayout
             style="@style/KeyValueContainer">
+
+            <TextView
+                style="@style/KeyValueText"
+                android:layout_width="122dp"
+                android:text="Date / Time"/>
+
+            <TextView
+                style="@style/KeyValueText"
+                android:text="10th June, 2015 / 21:30 pm"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/KeyValueContainer"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="20dp">
 
             <TextView
                 style="@style/KeyValueText"
@@ -70,13 +78,15 @@
 
         </LinearLayout>
 
+        <Button
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="@dimen/bottom_section_padding"
+            android:text="@string/book_now"
+            android:textAllCaps="false"/>
+
     </LinearLayout>
 
-    <Button
-        style="@style/ButtonPrimary"
-        android:layout_marginLeft="18dp"
-        android:layout_marginRight="18dp"
-        android:text="@string/book_now"
-        android:textAllCaps="false"/>
-
-</LinearLayout>
+</ScrollView>
