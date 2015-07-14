@@ -12,7 +12,8 @@
         android:paddingTop="8dp">
 
         <FrameLayout
-            style="@style/ClickableWrapper">
+            style="@style/ClickableWrapper"
+            android:onClick="updateInfo">
 
             <TextView
                 android:layout_width="match_parent"

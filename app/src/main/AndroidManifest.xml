@@ -135,6 +135,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.SettingsActivity" />
         </activity>
+        <activity
+            android:name="com.liveoo.adapters.InfoUpdateActivity"
+            android:label="@string/title_activity_info_update"
+            android:parentActivityName="com.liveoo.SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveoo.SettingsActivity" />
+        </activity>
     </application>
 
 </manifest>
