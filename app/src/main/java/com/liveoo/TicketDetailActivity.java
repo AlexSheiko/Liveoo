@@ -1,9 +1,11 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
+import com.liveooapp.liveoo.R;
 
 public class TicketDetailActivity extends AppCompatActivity {
 

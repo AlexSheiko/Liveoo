@@ -1,9 +1,11 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.liveooapp.liveoo.R;
 
 public class LoginActivity extends AppCompatActivity {
 

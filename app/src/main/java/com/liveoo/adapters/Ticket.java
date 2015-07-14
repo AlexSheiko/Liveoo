@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo.adapters;
+package com.liveoo.adapters;
 
 public class Ticket {
 

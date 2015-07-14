@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo.adapters;
+package com.liveoo.adapters;
 
 import android.app.Activity;
 import android.content.Context;

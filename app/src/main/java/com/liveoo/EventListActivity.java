@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,8 +11,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.liveooapp.liveoo.adapters.Event;
-import com.liveooapp.liveoo.adapters.EventAdapter;
+import com.liveoo.adapters.EventAdapter;
+import com.liveooapp.liveoo.R;
+import com.liveoo.adapters.Event;
 
 import java.util.ArrayList;
 import java.util.Collections;

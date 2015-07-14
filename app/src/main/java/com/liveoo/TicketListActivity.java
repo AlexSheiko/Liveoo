@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.liveooapp.liveoo.adapters.Ticket;
-import com.liveooapp.liveoo.adapters.TicketAdapter;
+import com.liveoo.adapters.TicketAdapter;
+import com.liveooapp.liveoo.R;
+import com.liveoo.adapters.Ticket;
 
 import java.util.ArrayList;
 import java.util.List;

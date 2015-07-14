@@ -1,13 +1,15 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class TicketResultActivity extends AppCompatActivity {
+import com.liveooapp.liveoo.R;
+
+public class PasswordRestoreActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ticket_result);
+        setContentView(R.layout.activity_password_restore);
     }
 }

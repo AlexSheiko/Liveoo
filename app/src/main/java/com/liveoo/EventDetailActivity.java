@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +9,17 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-public class TicketBookActivity extends AppCompatActivity {
+import com.liveooapp.liveoo.R;
+
+public class EventDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ticket_book);
+        setContentView(R.layout.activity_event_detail);
+
+        // TODO: Show real event name in activity title
+        getSupportActionBar().setTitle("Steak, Chips & Cocktail");
 
         // set height to a card
         FrameLayout containerView = (FrameLayout) findViewById(R.id.container);
@@ -42,6 +47,10 @@ public class TicketBookActivity extends AppCompatActivity {
     }
 
     public void bookTicket(View view) {
-        startActivity(new Intent(this, TicketPayActivity.class));
+        startActivity(new Intent(this, TicketBookActivity.class));
+    }
+
+    public void inviteFriends(View view) {
+        startActivity(new Intent(this, FriendsInviteActivity.class));
     }
 }

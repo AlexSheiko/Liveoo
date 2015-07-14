@@ -10,7 +10,7 @@
 
         <!-- TODO: Add splash screen -->
         <activity
-            android:name=".DispatchActivity"
+            android:name="com.liveoo.DispatchActivity"
             android:noHistory="true"
             android:theme="@style/LiveooTheme.Translucent" >
             <intent-filter>
@@ -20,120 +20,120 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.liveoo.LoginActivity"
             android:theme="@style/LiveooTheme.Fullscreen" >
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.liveoo.MainActivity"
             android:label="@string/activity_main_title" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.LoginActivity" />
+                android:value="com.liveoo.LoginActivity" />
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.liveoo.RegisterActivity"
             android:theme="@style/LiveooTheme.Fullscreen" >
         </activity>
         <activity
-            android:name=".PasswordRestoreActivity"
-            android:parentActivityName=".LoginActivity"
+            android:name="com.liveoo.PasswordRestoreActivity"
+            android:parentActivityName="com.liveoo.LoginActivity"
             android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.LoginActivity" />
+                android:value="com.liveoo.LoginActivity" />
         </activity>
         <activity
-            android:name=".PasswordResetActivity"
-            android:parentActivityName=".LoginActivity"
+            android:name="com.liveoo.PasswordResetActivity"
+            android:parentActivityName="com.liveoo.LoginActivity"
             android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.LoginActivity" />
+                android:value="com.liveoo.LoginActivity" />
         </activity>
         <activity
-            android:name=".PasswordResultActivity"
-            android:parentActivityName=".LoginActivity"
+            android:name="com.liveoo.PasswordResultActivity"
+            android:parentActivityName="com.liveoo.LoginActivity"
             android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.LoginActivity" />
+                android:value="com.liveoo.LoginActivity" />
         </activity>
         <activity
-            android:name=".EventListActivity"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.liveoo.EventListActivity"
+            android:parentActivityName="com.liveoo.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.MainActivity" />
+                android:value="com.liveoo.MainActivity" />
         </activity>
         <activity
-            android:name=".EventDetailActivity"
-            android:parentActivityName=".EventListActivity" >
+            android:name="com.liveoo.EventDetailActivity"
+            android:parentActivityName="com.liveoo.EventListActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.EventListActivity" />
+                android:value="com.liveoo.EventListActivity" />
         </activity>
         <activity
-            android:name=".TicketListActivity"
+            android:name="com.liveoo.TicketListActivity"
             android:label="@string/title_activity_ticket_list"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.liveoo.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.MainActivity" />
+                android:value="com.liveoo.MainActivity" />
         </activity>
         <activity
-            android:name=".TicketBookActivity"
+            android:name="com.liveoo.TicketBookActivity"
             android:label="@string/title_activity_ticket_book"
-            android:parentActivityName=".EventDetailActivity" >
+            android:parentActivityName="com.liveoo.EventDetailActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.EventDetailActivity" />
+                android:value="com.liveoo.EventDetailActivity" />
         </activity>
         <activity
-            android:name=".FriendsInviteActivity"
-            android:parentActivityName=".EventDetailActivity" >
+            android:name="com.liveoo.FriendsInviteActivity"
+            android:parentActivityName="com.liveoo.EventDetailActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.EventDetailActivity" />
+                android:value="com.liveoo.EventDetailActivity" />
         </activity>
         <activity
-            android:name=".TicketPayActivity"
+            android:name="com.liveoo.TicketPayActivity"
             android:label="@string/title_activity_ticket_pay"
-            android:parentActivityName=".TicketBookActivity" >
+            android:parentActivityName="com.liveoo.TicketBookActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.TicketBookActivity" />
+                android:value="com.liveoo.TicketBookActivity" />
         </activity>
         <activity
-            android:name=".TicketResultActivity"
+            android:name="com.liveoo.TicketResultActivity"
             android:label="@string/title_activity_ticket_result"
-            android:parentActivityName=".TicketPayActivity" >
+            android:parentActivityName="com.liveoo.TicketPayActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.TicketPayActivity" />
+                android:value="com.liveoo.TicketPayActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.liveoo.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.liveoo.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.MainActivity" />
+                android:value="com.liveoo.MainActivity" />
         </activity>
         <activity
-            android:name=".TicketDetailActivity"
+            android:name="com.liveoo.TicketDetailActivity"
             android:label="@string/title_activity_ticket_detail"
-            android:parentActivityName=".TicketListActivity" >
+            android:parentActivityName="com.liveoo.TicketListActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.TicketListActivity" />
+                android:value="com.liveoo.TicketListActivity" />
         </activity>
         <activity
-            android:name=".TagsManageActivity"
+            android:name="com.liveoo.TagsManageActivity"
             android:label="@string/title_activity_tags_manage"
-            android:parentActivityName=".SettingsActivity" >
+            android:parentActivityName="com.liveoo.SettingsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.liveooapp.liveoo.SettingsActivity" />
+                android:value="com.liveoo.SettingsActivity" />
         </activity>
     </application>
 

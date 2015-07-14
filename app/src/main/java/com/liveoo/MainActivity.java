@@ -1,4 +1,4 @@
-package com.liveooapp.liveoo;
+package com.liveoo;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,12 +11,18 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.liveooapp.liveoo.R;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences sharedPrefs =
+                PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPrefs.edit().putBoolean("registered", true).apply();
     }
 
     public void openCategory(View view) {
