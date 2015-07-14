@@ -25,4 +25,5 @@
     <string name="title_activity_ticket_detail">Ticket Detail</string>
     <string name="title_activity_tags_manage">Like it, Tap it</string>
     <string name="title_activity_info_update">You</string>
+    <string name="title_activity_settings_push">Notifications</string>
 </resources>

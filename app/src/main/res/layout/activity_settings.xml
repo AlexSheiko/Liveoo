@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="2dp"
                 android:gravity="center_vertical"
                 android:text="Name, Phone, Email"
                 android:textColor="@color/text_primary"
@@ -39,6 +39,7 @@
                 android:layout_height="56dp"
                 android:gravity="center_vertical"
                 android:text="Notifications"
+                android:onClick="toggleNotifications"
                 android:textColor="@color/text_primary"
                 android:textSize="16sp"/>
 

@@ -22,11 +22,11 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 SharedPreferences sharedPrefs =
                         PreferenceManager.getDefaultSharedPreferences(SplashActivity.this);
-//                if (sharedPrefs.getBoolean("registered", false)) {
-//                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
-//                } else {
+                if (sharedPrefs.getBoolean("registered", false)) {
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                } else {
                     startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-//                }
+                }
                 SplashActivity.this.finish();
 
                 overridePendingTransition(android.R.anim.fade_in,

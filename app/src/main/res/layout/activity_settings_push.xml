@@ -1,0 +1,126 @@
+<ScrollView
+    style="@style/ScrollContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsPushActivity">
+
+    <LinearLayout
+        style="@style/MainContainer"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="We will drop you a note every now and then\nto keep you in the know about:"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            style="@style/SettingsItemContainer"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Reward Updates"/>
+
+            <ToggleButton
+                style="@style/ToggleSettings"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/SettingsItemContainer">
+
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Newsletter"/>
+
+            <ToggleButton
+                style="@style/ToggleSettings"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/SettingsItemContainer">
+
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Ticket Giveaways"/>
+
+            <ToggleButton
+                style="@style/ToggleSettings"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/SettingsItemContainer">
+
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Posts From Friends"/>
+
+            <ToggleButton
+                style="@style/ToggleSettings"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/SettingsItemContainer">
+
+            <TextView
+                style="@style/SettingsTextView"
+                android:text="Personalised Events"/>
+
+            <ToggleButton
+                style="@style/ToggleSettings"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

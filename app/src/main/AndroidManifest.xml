@@ -11,7 +11,7 @@
         <!-- TODO: Add splash screen -->
         <activity
             android:name="com.liveoo.SplashActivity"
-            android:theme="@style/LiveooTheme.NoActionBar">
+            android:theme="@style/LiveooTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -135,8 +135,16 @@
                 android:value="com.liveoo.SettingsActivity" />
         </activity>
         <activity
-            android:name="com.liveoo.adapters.InfoUpdateActivity"
+            android:name="com.liveoo.SettingsInfoActivity"
             android:label="@string/title_activity_info_update"
+            android:parentActivityName="com.liveoo.SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.liveoo.SettingsActivity" />
+        </activity>
+        <activity
+            android:name="com.liveoo.SettingsPushActivity"
+            android:label="@string/title_activity_settings_push"
             android:parentActivityName="com.liveoo.SettingsActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
