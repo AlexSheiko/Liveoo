@@ -23,6 +23,11 @@
         <item name="android:src">@drawable/ic_overflow_menu</item>
     </style>
 
+    <style name="LiveooTheme.Fullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <style name="LiveooTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
     </style>
 
@@ -43,17 +48,19 @@
     <style name="InputField" parent="FormElement">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:drawablePadding">16dp</item>
+        <item name="android:minHeight">50dp</item>
         <item name="android:background">@drawable/input_field_selector</item>
-        <item name="android:paddingLeft">20dp</item>
-        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:paddingRight">22dp</item>
         <item name="android:layout_marginTop">8dp</item>
-        <item name="android:textColorHint">#d2ffffff</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColorHint">#deffffff</item>
     </style>
 
     <style name="ButtonPrimary" parent="@style/Widget.AppCompat.Button.Borderless">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">52dp</item>
+        <item name="android:minHeight">50dp</item>
         <item name="android:layout_marginBottom">16dp</item>
         <item name="android:layout_marginTop">12dp</item>
         <item name="android:background">@drawable/primary_button_selector</item>
@@ -61,6 +68,7 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#e6ffffff</item>
         <item name="android:clickable">true</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="ButtonSecondary" parent="ButtonPrimary">
@@ -73,14 +81,19 @@
 
     <style name="ButtonFacebook" parent="ButtonPrimary">
         <item name="android:background">@drawable/facebook_button_selector</item>
+        <item name="android:onClick">continueWithFacebook</item>
     </style>
 
     <style name="BorderlessButton" parent="@style/Widget.AppCompat.Button.Borderless">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">6dp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextLabel">
@@ -93,7 +106,7 @@
 
     <style name="FormHeader" parent="TextLabel">
         <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">27sp</item>
     </style>
 
     <style name="CategoryImage">

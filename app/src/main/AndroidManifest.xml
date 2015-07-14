@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.NoActionBar" >
+            android:theme="@style/LiveooTheme.Fullscreen" >
         </activity>
         <activity
             android:name="com.liveoo.MainActivity"
@@ -31,12 +31,12 @@
         </activity>
         <activity
             android:name="com.liveoo.RegisterActivity"
-            android:theme="@style/LiveooTheme.NoActionBar" >
+            android:theme="@style/LiveooTheme.Fullscreen" >
         </activity>
         <activity
             android:name="com.liveoo.PasswordRestoreActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.NoActionBar" >
+            android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />
@@ -44,7 +44,7 @@
         <activity
             android:name="com.liveoo.PasswordResetActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.NoActionBar" >
+            android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />
@@ -52,7 +52,7 @@
         <activity
             android:name="com.liveoo.PasswordResultActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.NoActionBar" >
+            android:theme="@style/LiveooTheme.Fullscreen" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />

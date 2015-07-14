@@ -2,7 +2,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-            tools:context=".LoginActivity">
+             tools:context=".LoginActivity">
 
     <ImageView
         style="@style/BackgroundImage"
@@ -36,6 +36,7 @@
 
         <Button
             style="@style/BorderlessButton"
+            android:layout_marginTop="6dp"
             android:onClick="restorePassword"
             android:text="Forgotten Your Account?"/>
 
@@ -44,17 +45,58 @@
             android:onClick="register"
             android:text="Need an Account?"/>
 
-        <TextView
-            style="@style/TextLabel"
-            android:text="Or"
-            android:textAllCaps="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
 
-        <!--TODO: Replace with real Facebook button-->
-        <Button
-            style="@style/ButtonSecondary"
-            android:onClick="continueWithFacebook"
-            android:text="Sign in with Facebook"
-            android:textAllCaps="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/white"/>
+
+            <TextView
+                style="@style/TextLabel"
+                android:textSize="17sp"
+                android:text="Or"
+                android:textAllCaps="true"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ButtonFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_facebook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Facebook"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
 
         <TextView
             style="@style/TextLabel"

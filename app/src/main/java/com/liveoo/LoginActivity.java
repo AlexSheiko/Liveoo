@@ -27,4 +27,9 @@ public class LoginActivity extends AppCompatActivity {
     public void restorePassword(View view) {
         startActivity(new Intent(this, PasswordRestoreActivity.class));
     }
+
+    public void continueWithFacebook(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
+    }
 }
