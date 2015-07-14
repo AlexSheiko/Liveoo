@@ -27,7 +27,6 @@
             android:layout_height="match_parent"
             android:background="@color/category_darkener"/>
 
-        <!--TODO: Decrease heart icon size-->
         <TextView
             style="@style/CategoryTitle"
             android:layout_height="wrap_content"

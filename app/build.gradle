@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.liveooapp.liveoo"
-        // TODO: Set minSdkVersion to “18” before releasing
+        // TODO: Set minSdkVersion to 18 before releasing
         minSdkVersion 7
         targetSdkVersion 22
         versionCode 1
