@@ -33,9 +33,6 @@ public class EventListActivity extends AppCompatActivity {
         eventList.add(new Event(1));
         eventList.add(new Event(2));
         eventList.add(new Event(3));
-        eventList.add(new Event(1));
-        eventList.add(new Event(2));
-        eventList.add(new Event(3));
         Collections.shuffle(eventList);
 
         ListView listView = (ListView) findViewById(android.R.id.list);

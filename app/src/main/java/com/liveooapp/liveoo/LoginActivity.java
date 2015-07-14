@@ -23,6 +23,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void restorePassword(View view) {
-        startActivity(new Intent(this, RestorePasswordActivity.class));
+        startActivity(new Intent(this, PasswordRestoreActivity.class));
     }
 }

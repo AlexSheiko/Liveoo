@@ -11,79 +11,110 @@
         android:paddingLeft="20dp"
         android:paddingTop="8dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center_vertical"
-            android:text="Name, Phone, Email"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:text="Name, Phone, Email"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/divider"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:text="Notifications"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="Notifications"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/divider"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:text="Tags"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper"
+            android:onClick="manageTags">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="Tags"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/divider"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:text="Frequently Asked Questions"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="Frequently Asked Questions"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/divider"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:text="Terms and Conditions"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="Terms and Conditions"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/divider"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:gravity="center_vertical"
-            android:text="Privacy Policy"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"/>
+        <FrameLayout
+            style="@style/ClickableWrapper">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="Privacy Policy"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+
+        </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -92,11 +123,12 @@
 
             <Button
                 style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
                 android:layout_gravity="bottom"
-                android:textAllCaps="false"
-                android:text="Log Out"
                 android:layout_marginRight="16dp"
-                android:layout_width="match_parent"/>
+                android:onClick="logOut"
+                android:text="Log Out"
+                android:textAllCaps="false"/>
 
         </FrameLayout>
 
