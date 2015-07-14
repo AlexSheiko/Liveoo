@@ -8,7 +8,6 @@ public class Ticket {
     private String mLocation;
 
     public Ticket() {
-        // TODO: Remove empty constructor when using Retrofit
     }
 
     public String getTitle() {

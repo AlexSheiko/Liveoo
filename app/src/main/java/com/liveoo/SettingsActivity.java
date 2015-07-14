@@ -24,7 +24,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     public void manageTags(View view) {
-        startActivity(new Intent(this, TagsManageActivity.class));
+        startActivity(new Intent(this, SettingsTagsActivity.class));
     }
 
     public void logOut(View view) {

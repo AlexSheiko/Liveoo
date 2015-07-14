@@ -18,7 +18,6 @@ public class EventDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_detail);
 
-        // TODO: Show real event name in activity title
         getSupportActionBar().setTitle("Steak, Chips & Cocktail");
 
         // set height to a card

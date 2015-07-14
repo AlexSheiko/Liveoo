@@ -14,7 +14,6 @@ public class FriendsInviteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friends_invite);
 
-        // TODO: Show real event name in activity title
         getSupportActionBar().setTitle("Invite : Steak, Chips & Cocktail");
 
         // set height to a card

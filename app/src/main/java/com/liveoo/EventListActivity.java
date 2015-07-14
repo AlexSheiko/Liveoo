@@ -41,7 +41,6 @@ public class EventListActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // TODO: Show details only for selected event
                 startActivity(new Intent(EventListActivity.this, EventDetailActivity.class));
             }
         });

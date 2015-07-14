@@ -12,7 +12,6 @@ public class Event {
 
     public Event(int id) {
         mId = id;
-        // TODO: Remove empty constructor when using Retrofit
     }
 
     public int getId() {

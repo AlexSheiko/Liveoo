@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout container = (FrameLayout) view;
         TextView categoryView = (TextView) container.getChildAt(container.getChildCount()-1);
         String category = categoryView.getText().toString();
-        // TODO Open only selected category
         SharedPreferences sharedPrefs =
                 PreferenceManager.getDefaultSharedPreferences(this);
         sharedPrefs.edit().putString("category", category).apply();
