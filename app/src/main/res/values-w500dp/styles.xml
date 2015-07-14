@@ -12,4 +12,18 @@
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
+    <style name="ButtonPrimary" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:background">@drawable/primary_button_selector</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#e6ffffff</item>
+        <item name="android:clickable">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
 </resources>

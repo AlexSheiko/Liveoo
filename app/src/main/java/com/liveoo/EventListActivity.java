@@ -57,6 +57,7 @@ public class EventListActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_map) {
+            startActivity(new Intent(this, MapActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

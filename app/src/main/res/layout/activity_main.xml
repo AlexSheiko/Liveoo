@@ -15,7 +15,6 @@
         android:layout_weight="1"
         android:onClick="openCategory">
 
-        <!--TODO: Replace placeholders with real images-->
         <ImageView
             style="@style/CategoryImage"
             android:layout_width="match_parent"

@@ -9,6 +9,7 @@ import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ToggleButton;
 
 import com.liveooapp.liveoo.R;
 
@@ -50,6 +51,10 @@ public class EventAdapter extends ArrayAdapter<Event> {
         } else if (event.getId() == 3) {
             ((ImageView) rootView.findViewById(R.id.icon)).setImageDrawable(
                     getContext().getResources().getDrawable(R.drawable.ic_event_3));
+        }
+
+        if (position == 0) {
+            ((ToggleButton) rootView.findViewById(R.id.toggle_like)).setChecked(true);
         }
 
         /*

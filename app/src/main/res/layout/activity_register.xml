@@ -45,7 +45,7 @@
 
         <Button
             style="@style/ButtonPrimary"
-            android:onClick="login"
+            android:onClick="register"
             android:text="@string/register"/>
 
         <Button
@@ -54,6 +54,7 @@
 
         <Button
             style="@style/BorderlessButton"
+            android:onClick="returnToLoginActivity"
             android:text="Already have an Account?"/>
 
         <LinearLayout
