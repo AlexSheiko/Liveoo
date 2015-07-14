@@ -66,6 +66,7 @@
 
     <style name="ButtonUber" parent="ButtonPrimary">
         <item name="android:background">@drawable/uber_button_selector</item>
+        <item name="android:clickable">true</item>
     </style>
 
     <style name="ButtonFacebook" parent="ButtonPrimary">
