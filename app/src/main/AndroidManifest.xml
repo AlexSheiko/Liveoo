@@ -10,9 +10,8 @@
 
         <!-- TODO: Add splash screen -->
         <activity
-            android:name="com.liveoo.DispatchActivity"
-            android:noHistory="true"
-            android:theme="@style/LiveooTheme.Translucent" >
+            android:name="com.liveoo.SplashActivity"
+            android:theme="@style/LiveooTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +20,7 @@
         </activity>
         <activity
             android:name="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.Fullscreen" >
+            android:theme="@style/LiveooTheme.NoActionBar" >
         </activity>
         <activity
             android:name="com.liveoo.MainActivity"
@@ -32,12 +31,12 @@
         </activity>
         <activity
             android:name="com.liveoo.RegisterActivity"
-            android:theme="@style/LiveooTheme.Fullscreen" >
+            android:theme="@style/LiveooTheme.NoActionBar" >
         </activity>
         <activity
             android:name="com.liveoo.PasswordRestoreActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.Fullscreen" >
+            android:theme="@style/LiveooTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />
@@ -45,7 +44,7 @@
         <activity
             android:name="com.liveoo.PasswordResetActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.Fullscreen" >
+            android:theme="@style/LiveooTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />
@@ -53,7 +52,7 @@
         <activity
             android:name="com.liveoo.PasswordResultActivity"
             android:parentActivityName="com.liveoo.LoginActivity"
-            android:theme="@style/LiveooTheme.Fullscreen" >
+            android:theme="@style/LiveooTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.liveoo.LoginActivity" />

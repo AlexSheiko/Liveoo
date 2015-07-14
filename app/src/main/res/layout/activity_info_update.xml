@@ -6,7 +6,6 @@
 
     <LinearLayout
         style="@style/MainContainer"
-        android:paddingBottom="16dp"
         android:orientation="vertical">
 
         <ImageView
@@ -21,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"
+            android:paddingBottom="16dp"
             android:orientation="vertical">
 
             <TextView
