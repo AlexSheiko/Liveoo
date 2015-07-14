@@ -5,14 +5,27 @@
     android:orientation="vertical"
     tools:context=".EventListActivity">
 
-    <!--TODO: Add real spinner background-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp">
+
     <Spinner
         style="@style/FormElement"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="9dp"
         android:background="@android:color/white"
         android:entries="@array/subcategories"
         android:paddingLeft="12dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_spinner_arrow"/>
+
+    </FrameLayout>
 
     <ListView
         android:id="@android:id/list"
