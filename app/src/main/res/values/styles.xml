@@ -12,10 +12,10 @@
     </style>
 
     <style name="LiveooActionBar" parent="Widget.AppCompat.Light.ActionBar">
-        <item name="android:background">@color/action_bar_background</item>
         <item name="background">@color/action_bar_background</item>
         <item name="elevation">0dp</item>
-        <!--TODO: Add left padding to action bar title-->
+        <item name="logo">@drawable/space</item>
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
     </style>
 
     <style name="ActionButtonOverflow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
